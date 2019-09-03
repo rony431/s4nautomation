@@ -24,10 +24,10 @@ Given('User wants to verify free trial', function () {
 });
 
 When('he clicks on free trial', function () {
-  const freeTrialButton = page.home.freeTrialButton.with({ boundTestRun: testController }).withText('Start Free Trial');
+  const freeTrialButtons = page.home.freeTrialButton.with({ boundTestRun: testController }).withText('Start Free Trial');
 
   return testController
-    .click(freeTrialButton);
+    .click(freeTrialButtons);
 });
 
 Then('it enters zip code', function () {
