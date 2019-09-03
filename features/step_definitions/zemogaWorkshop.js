@@ -1,6 +1,6 @@
 const { Given, When, Then } = require('cucumber');
 const { ClientFunction } = require('testcafe');
-const Page = require('./pageObjects/ComsystoBlog');
+const Page = require('./pageObjects/zemogaWorkshop');
 const page = new Page();
 let testController = null;
 
