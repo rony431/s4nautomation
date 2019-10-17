@@ -1,0 +1,75 @@
+[
+  {
+    "description": "  As User I want to explore zemoga webpage",
+    "keyword": "Feature",
+    "name": "Workshop QA End to end zemoga",
+    "line": 1,
+    "id": "workshop-qa-end-to-end-zemoga",
+    "tags": [],
+    "uri": "features/zemogaWorkshop.feature",
+    "elements": [
+      {
+        "id": "workshop-qa-end-to-end-zemoga;view-free-trial",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "View free trial",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User wants to verify free trial",
+            "match": {
+              "location": "features/step_definitions/zemogaWorkshop.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1233000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "he clicks on free trial",
+            "match": {
+              "location": "features/step_definitions/zemogaWorkshop.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5602000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "it enters zip code",
+            "match": {
+              "location": "features/step_definitions/zemogaWorkshop.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6457000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "he should see the plans",
+            "match": {
+              "location": "features/step_definitions/zemogaWorkshop.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
