@@ -1,18 +1,18 @@
 [
   {
-    "description": "  As User I want to explore zemoga webpage",
+    "description": "  As User I want verify s4n test page",
     "keyword": "Feature",
-    "name": "Workshop QA End to end zemoga",
+    "name": "Test s4n Automation",
     "line": 1,
-    "id": "workshop-qa-end-to-end-zemoga",
+    "id": "test-s4n-automation",
     "tags": [],
-    "uri": "features/zemogaWorkshop.feature",
+    "uri": "features/s4nTestAutomation.feature",
     "elements": [
       {
-        "id": "workshop-qa-end-to-end-zemoga;view-free-trial",
+        "id": "test-s4n-automation;view-form",
         "keyword": "Scenario",
         "line": 4,
-        "name": "View free trial",
+        "name": "View form",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -20,52 +20,209 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "User wants to verify free trial",
+            "name": "User wants to create account s4n test page",
             "match": {
-              "location": "features/step_definitions/zemogaWorkshop.js:15"
+              "location": "features/step_definitions/s4nCreateAccount.js:21"
             },
             "result": {
               "status": "passed",
-              "duration": 1233000000
+              "duration": 1891000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "he clicks on free trial",
+            "name": "fill up correctly the fields",
             "match": {
-              "location": "features/step_definitions/zemogaWorkshop.js:26"
+              "location": "features/step_definitions/s4nCreateAccount.js:32"
             },
             "result": {
               "status": "passed",
-              "duration": 5602000000
+              "duration": 38720000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "it enters zip code",
+            "name": "it clicks on create account and confirm alert",
             "match": {
-              "location": "features/step_definitions/zemogaWorkshop.js:33"
+              "location": "features/step_definitions/s4nCreateAccount.js:43"
             },
             "result": {
               "status": "passed",
-              "duration": 6457000000
+              "duration": 4214000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-s4n-automation;verify-fields",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "verify Fields",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "User wants to create account s4n test page",
+            "match": {
+              "location": "features/step_definitions/s4nCreateAccount.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2671000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "fill up incorrectly birthDate",
+            "match": {
+              "location": "features/step_definitions/s4nCreateAccount.js:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25940000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 8,
-            "name": "he should see the plans",
+            "line": 12,
+            "name": "it clicks on create account and confirm fields messages",
             "match": {
-              "location": "features/step_definitions/zemogaWorkshop.js:42"
+              "location": "features/step_definitions/s4nCreateAccount.js:62"
             },
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 207000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-s4n-automation;verify-gender-mandatory",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "verify Gender mandatory",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "User wants to create account s4n test page",
+            "match": {
+              "location": "features/step_definitions/s4nCreateAccount.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 826000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "fill up correctly without click on gender",
+            "match": {
+              "location": "features/step_definitions/s4nCreateAccount.js:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2829000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "it clicks on create account and confirm message of gender",
+            "match": {
+              "location": "features/step_definitions/s4nCreateAccount.js:80"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 188000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-s4n-automation;verify-page-title",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "verify page title",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "User wants to create account s4n test page",
+            "match": {
+              "location": "features/step_definitions/s4nCreateAccount.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 561000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "verify page title",
+            "match": {
+              "location": "features/step_definitions/s4nCreateAccount.js:87"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 422000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-s4n-automation;verify-terms-and-conditions",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "verify terms and conditions",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "User wants to create account s4n test page",
+            "match": {
+              "location": "features/step_definitions/s4nCreateAccount.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 538000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "verify terms and conditions copy",
+            "match": {
+              "location": "features/step_definitions/s4nCreateAccount.js:93"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 424000000
             }
           }
         ]
