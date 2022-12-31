@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "cucumber": "4.0.0",
-    "testcafe": "0.20.2",
+    "testcafe": "2.2.0",
     "qrcode-terminal": "0.12.0",
     "cucumber-junit": "1.7.1",
     "cucumber-html-reporter": "4.0.2",
